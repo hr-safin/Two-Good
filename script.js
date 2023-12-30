@@ -1,4 +1,5 @@
-let videoContainer = document.querySelector("#video-container")
+function videoAnimation(){
+    let videoContainer = document.querySelector("#video-container")
 let playbtn = document.querySelector("#play")
 
 videoContainer.addEventListener("mouseenter", function(){
@@ -22,3 +23,27 @@ videoContainer.addEventListener("mousemove", function(dets){
         top : dets.y-60
     })
 })
+}
+
+videoAnimation()
+
+
+function loadingAnimation(){
+  
+    gsap.from("#page1 h2",{
+        y : 100,
+        opacity : 0,
+        delay : 0.6,
+        duration : 0.5,
+        stagger : 0.2
+    })
+    gsap.from("#video-container",{
+        scale : 0.9,
+        opacity : 0,
+        delay : 1.6,
+        duration : .6,
+    })
+}
+
+loadingAnimation()
+
