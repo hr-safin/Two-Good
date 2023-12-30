@@ -55,3 +55,46 @@ body {
   opacity: 0;
   scale: 0;
 }
+
+#straightLine{
+    width: 100%;
+    font-family: fatura;
+    text-transform: uppercase;
+    font-size: 7px;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-bottom: 1px solid black;
+   
+}
+
+#straightLine .buyGood{
+    display:  flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+#page2{
+    display: flex;
+    position: relative;
+    height: 100vh;
+    padding: 1vw .3vw;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+#page2 .elem{
+    height:  100%;
+    width: 32%;
+   
+}
+
+#page2 .elem img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
