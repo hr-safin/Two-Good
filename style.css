@@ -90,6 +90,7 @@ body {
 #page2 .elem{
     height:  100%;
     width: 32%;
+    overflow: hidden;
    
 }
 
@@ -97,4 +98,5 @@ body {
     object-fit: cover;
     height: 100%;
     width: 100%;
+    scale: 1.1;
 }
