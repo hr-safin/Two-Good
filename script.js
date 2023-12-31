@@ -53,3 +53,31 @@ function loadingAnimation(){
 
 loadingAnimation()
 
+document.addEventListener("mousemove", function(dets){
+    gsap.to("#cursor",{
+       left:dets.x,
+       top : dets.y-240
+
+    })
+})
+
+
+document.querySelectorAll(".child").forEach(element => {
+    element.addEventListener("mouseenter", function(){
+    
+        gsap.to("#cursor",{
+            transform: `translate(-50%, 50%) scale(1)`,
+           
+
+        })
+    })
+    element.addEventListener("mouseleave", function(){
+    
+        gsap.to("#cursor",{
+            transform: `translate(-50%, 50%) scale(0)`
+        })
+    })
+});
+
+
+
