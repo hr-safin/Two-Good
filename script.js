@@ -25,8 +25,8 @@ videoContainer.addEventListener("mouseleave", function(){
 
 videoContainer.addEventListener("mousemove", function(dets){
     gsap.to(playbtn,{
-        left : dets.x-80,
-        top : dets.y-60
+        left : dets.x-70,
+        top : dets.y-100
     })
 })
 }
